@@ -19,7 +19,7 @@
 6. The figure element should contain and image (`img`) and a caption (`figcaption`).  The image source is "images/backlit-clouds-dark-831x200.jpg" and the caption is in the titles-captions.txt file.  
 7. The Recent Blogs section will use a CSS Table layout using 1 row and 3 columns. First add a head tag with the word "Recent Blogs" to desribe the section. Add a div tag for the row and 3 child divs within the row to represent the 3 columns. Within each column add an image (`img`) and a paragraph (`p`).  The images can be found in the images directory and the content for paragraphs in the recent-blogs.txt file.  The order of the images is : "hudson-river..", "fort-point...", "prince-william...".
 8. The About section will use a CSS Table layout using 1 row and 2 columns.  First add the a head tag with the word "About" to desribe the section.  Add a div tag for the row and and 2 child divs within the fow to represent the 2 coluns.  Within each column add an head tag with and a paragraph.  The head tags should contain the words "News" and "About".  The content for the news and about paragraphs are in the correpsonding content directory files.
-9. Within the div tag representingn the column for "About" place a div tag that will by styled to be a call for action button and make it's content "Click to find out more".
+9. Within the div tag representingn the column for "About" place a div tag that will by styled to be a call to action (CTA) area with a child button element and make it's content "Click to find out more".
 10. In the footer section add 2 div tags to represent the left and right contents of the footer. The contents of the left should contain the copyright information `Copyright &copy; 2019-20` and the contents on the right should contain your name.
 11. Internal Page Links: In order to support internal navigation add id attributes to head tag for the "recent blogs" section and the head tag for the "about" section.  Then use these id's in the page links section of the nav element by assigning the `#<id>` to the `href`.  You can leave the home link `href` empty to cause the page to refer to the start of the document. Test this out by clicking on these links.
 
@@ -72,9 +72,10 @@
  }
 ```
 
-- create a `col` class 
-
-    .col {
+- create a `col` class and add the `col` class to any `div`'s that are children of the `row` class and then style the cols and `p` children with the following
+ 
+ ```
+.col {
         display: table-cell;
         border: 1px solid lightgray;
         border-radius: 10px;
@@ -83,14 +84,19 @@
     .col p {
         font-size: 1rem;
     }
+ ```
+8. Float the text in the **Recent Blogs** section around the images by adding a `wrapped` class to the images and set them to `display:block` and `float:left`.  Add 5px padding.
   
-    /* float text around images */
-    .wrapped {
-        display: block;
-        float: left;
-        padding: 5px;
-    }
+9. Call to action button styling 
+  - assign a `cta` class to the div around the button and give it a width of `11rem`, `margin:auto` and center align the text
+  - assign a `cta-button` class to the button and make it a block element with a heigth of `40px`, a line height of `40px`, a red backgound, white text and `border-radius` of `30px`
+10. Footer
+  - provide a background color of #333, height of 4rem and text color white
+  - give it a padding of 20 and position relative with a width of 100%
+  - create a `footer-left` and `footer-right` class and assign them to the 2 `div`'s nested in the `footer`
+  - set absolute position for both `footer-right` and `footer-left`
+  - set a property of `left: 0.50%` on `footer-left`
+  - set a property of `right: 0.50%` on `footer-right`
 
-
-
-The left div should contain a class indicating `nav-left` and the right div tag should contain a class indicating `
+## Test 
+Bring up your page and test it 

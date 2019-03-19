@@ -50,12 +50,47 @@
   - apply `position: absolute` to both `nav-left` and `nav-right`
   - `nav-left` will be positioned at `right:0, top:0` and `nav-right` will be positioned at `left:0, top:0`
 6. Big Image Figure: set the margin to 0 on the figure and set the width to 100% and height to auto. This ensures that the image covers the full width of the page no matter how big the window is.
+7. Table layouts are used for both the Recent Blogs and About sections.  The table layout will be controlled by the number of rows and columns as well as the amount of content.
+  - create a table class and assign it to sections containing **Recent Blogs** and **About**.  Create a table class selector in the style sheet and give it the following properties and values:
 
+  ```
+  {
+    display: table;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 10px;
+  }
+  ```
 
+- create a row class and assign it to the divs that are direct children of the section elements and give them the rows the following style  
+
+```
+.row {
+    display: table-row;
+ }
+```
+
+- create a `col` class 
+
+    .col {
+        display: table-cell;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+    }
+
+    .col p {
+        font-size: 1rem;
+    }
   
+    /* float text around images */
+    .wrapped {
+        display: block;
+        float: left;
+        padding: 5px;
+    }
 
-
-  
 
 
 The left div should contain a class indicating `nav-left` and the right div tag should contain a class indicating `

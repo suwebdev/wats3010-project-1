@@ -1,5 +1,9 @@
 # Project 1: Travel Blog  
 
+## Design
+
+![Travel Blog](images/finished-project.png)
+
 ## HTML  
 1. Create files: index.html and css/style.css.  Use VS code to generate default html in the index.html file (hint: use !<tab> in VS Code.).  Link CSS file into the html.  Add a meta tag to specify you as the author `<meta name="author" content="<your name">`
 

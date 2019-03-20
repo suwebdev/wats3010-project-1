@@ -15,14 +15,14 @@
 
 2. You can find all content in the files located in the content directory.  
 
-3. Code the semantic html to provide document structure:
-  header
-  nav
-  figure
-  main
-  ---- section
-  ---- section
-  footer
+3. Code the semantic html to provide document structure:  
+  header  
+  nav  
+  figure  
+  main  
+  ---- section  
+  ---- section  
+  footer  
 
 4. Add head tags to the `header` element and supply the title and subtitle using content from the **titles-captions.text** files.
 5. Add 2 div tags within the `nav` element. Add an unordered list tag (`ul`) inside each of the div elements. The list on the left should contain list items (`li`) with content and links (`a`) to "Home", "Recent Blogs", and "About".  These will be linked to internal links. The list items on the right should contain links to "Twitter", "Facebook" and "Github" and will be external links.
@@ -115,5 +115,11 @@
   - set a property of `left: 0.50%` on `footer-left`
   - set a property of `right: 0.50%` on `footer-right`
 
-## Test 
-Bring up your page and test it 
+## Test and Submit
+* Bring up your page and test it  
+* Push your code to github.com  
+* Configure hosting to github.io in the repository setting tab  
+* Browse to your hosted code  
+* Copy the link into the description area of your repository  
+* Validate and fix errors using [HTML](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/) Validators  
+* Submit 2 URL in Canvas: one from github.com and one from github.io  

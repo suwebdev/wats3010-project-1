@@ -38,7 +38,10 @@
 9. Within the div tag representingn the column for "About" place a div tag that will by styled to be a call to action (CTA) area with a child button element and make it's content "Click to find out more".
 10. In the footer section add 2 div tags to represent the left and right contents of the footer. The contents of the left should contain the copyright information `Copyright &copy; 2019-20` and the contents on the right should contain your name.
 11. Internal Page Links: In order to support internal navigation add id attributes to head tag for the "recent blogs" section and the head tag for the "about" section.  Then use these id's in the page links section of the nav element by assigning the `#<id>` to the `href`.  You can leave the home link `href` empty to cause the page to refer to the start of the document. Test this out by clicking on these links.
-12. Add a favicon using the `t.png` file in images directory.
+12. Add a favicon using the `t.png` file in images directory. 
+```
+    <link rel="icon" type="image/png" href="images/t.png">
+```
 
 ## CSS
 1. Normalize the styles (overrided default browser styles)

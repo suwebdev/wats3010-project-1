@@ -34,8 +34,8 @@
 8. The **About** section will use a CSS Table layout using 1 row and 2 columns.
   - First add the a head tag with the word "About" to describe the section.
   - Add a div tag for the row and and 2 child divs within the row to represent the 2 columns.  
-  - Within each column add an head tag with and a paragraph.  The head tags should contain the words "News" and "About".  The content for the news and about paragraphs are in the correpsonding content directory files.
-9. Within the div tag representingn the column for "About" place a div tag that will by styled to be a call to action (CTA) area with a child button element and make it's content "Click to find out more".
+  - Within each column add a head tag with a paragraph.  The head tags should contain the words "News" and "About".  The content for the news and about paragraphs are in the correpsonding content directory files. There are 2 paragraphs in the News Section.
+9. Within the div tag representing the column for "About" place a div tag that will by styled to be a call to action (CTA) area with a child button element and make it's content "Click to find out more".
 10. In the footer section add 2 div tags to represent the left and right contents of the footer. The contents of the left should contain the copyright information `Copyright &copy; 2019-20` and the contents on the right should contain your name.
 11. Internal Page Links: In order to support internal navigation add id attributes to head tag for the **Recent Blogs** section and the head tag for the **About** section.  Then use these id's in the page links section of the nav element by assigning the `#<id>` to the `href`.  You can set the home link `href` to `#` string to cause the page to go to the start of the document. Test this out by clicking on these links.
 12. Add a favicon using the `t.png` file in images directory. 

@@ -42,7 +42,7 @@
 ```
     <link rel="icon" type="image/png" href="images/t.png">
 ```
-
+13. Add the main title from title-captions.txt to the title tag in the head section.
 ## CSS
 1. Normalize the styles (overrided default browser styles)
   - set body height to 100%

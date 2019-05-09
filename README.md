@@ -8,7 +8,7 @@
 
 ### Wireframe
 
-![Wireframe](images/wireframe.png)
+![Wireframe](images/travel-blog.png)
 
 ## HTML  
 1. Create files: index.html and css/style.css.  Use VS code to generate default html in the index.html file (hint: use !<tab> in VS Code.).  Link CSS file into the html.  Add a meta tag to specify you as the author `<meta name="author" content="<your name">`
@@ -16,28 +16,28 @@
 2. You can find all content in the files located in the content directory.  
 
 3. Code the semantic html to provide document structure:  
-  header  
+  header        **Home**  
   nav  
   figure  
   main  
-  ---- section  
-  ---- section  
+  ---- section  **Recent Blogs**  
+  ---- section  **About**  
   footer  
 
-4. Add head tags to the `header` element and supply the title and subtitle using content from the **titles-captions.text** files.
-5. Add 2 div tags within the `nav` element. Add an unordered list tag (`ul`) inside each of the div elements. The list on the left should contain list items (`li`) with content and links (`a`) to "Home", "Recent Blogs", and "About".  These will be linked to internal links. The list items on the right should contain links to "Twitter", "Facebook" and "Github" and will be external links.
+4. Add head tags to the `header` element and supply the title and subtitle using content from the **titles-captions.txt** files.
+5. Add 2 div tags within the `nav` element. Add an unordered list tag (`ul`) inside each of the div elements. The list on the left should contain list items (`li`) with content and links (`a`) to **Home**, **Recent Blogs**, and **About**.  These will be linked to internal links. The list items on the right should contain links to "Twitter", "Facebook" and "Github" and will be external links.
 6. The figure element should contain an image (`img`) and a caption (`figcaption`).  The image source is "images/backlit-clouds-dark-831x200.jpg" and the caption is in the titles-captions.txt file.  
-7. The Recent Blogs section will use a CSS Table layout using 1 row and 3 columns. 
+7. The **Recent Blogs** section will use a CSS Table layout using 1 row and 3 columns. 
   - First add a head tag with the word "Recent Blogs" to describe the section. 
   - Add a div tag for the row and 3 child divs within the row to represent the 3 columns. 
-  - Within each column add an image (`img`) and a paragraph (`p`).  The images can be found in the images directory and the content for paragraphs in the recent-blogs.txt file.  The order of the images is : "hudson-river..", "fort-point...", "prince-william...".
-8. The About section will use a CSS Table layout using 1 row and 2 columns.
-  - First add the a head tag with the word "About" to desribe the section.
-  - Add a div tag for the row and and 2 child divs within the fow to represent the 2 coluns.  
+  - Within each column add an image (`img`) and a paragraph (`p`).  The images can be found in the images directory and the content for paragraphs in the recent-blogs.txt file.  The order of the images is : **hudson-river..**, **fort-point...**, **prince-william...**.
+8. The **About** section will use a CSS Table layout using 1 row and 2 columns.
+  - First add the a head tag with the word "About" to describe the section.
+  - Add a div tag for the row and and 2 child divs within the row to represent the 2 columns.  
   - Within each column add an head tag with and a paragraph.  The head tags should contain the words "News" and "About".  The content for the news and about paragraphs are in the correpsonding content directory files.
 9. Within the div tag representingn the column for "About" place a div tag that will by styled to be a call to action (CTA) area with a child button element and make it's content "Click to find out more".
 10. In the footer section add 2 div tags to represent the left and right contents of the footer. The contents of the left should contain the copyright information `Copyright &copy; 2019-20` and the contents on the right should contain your name.
-11. Internal Page Links: In order to support internal navigation add id attributes to head tag for the "recent blogs" section and the head tag for the "about" section.  Then use these id's in the page links section of the nav element by assigning the `#<id>` to the `href`.  You can leave the home link `href` empty to cause the page to refer to the start of the document. Test this out by clicking on these links.
+11. Internal Page Links: In order to support internal navigation add id attributes to head tag for the **Recent Blogs** section and the head tag for the **About** section.  Then use these id's in the page links section of the nav element by assigning the `#<id>` to the `href`.  You can set the home link `href` to empty string to cause the page to go to the start of the document. Test this out by clicking on these links.
 12. Add a favicon using the `t.png` file in images directory. 
 ```
     <link rel="icon" type="image/png" href="images/t.png">
@@ -71,7 +71,7 @@
   - `nav-left` will be positioned at `right:0, top:0` and `nav-right` will be positioned at `left:0, top:0`
 6. Big Image Figure: set the margin to 0 on the figure and set the width to 100% and height to auto. This ensures that the image covers the full width of the page no matter how big the window is.
 7. Table layouts are used for both the Recent Blogs and About sections.  The table layout will be controlled by the number of rows and columns as well as the amount of content.
-  - create a table class and assign it to sections containing **Recent Blogs** and **About**.  Create a table class selector in the style sheet and give it the following properties and values:
+  - create a class named `table` and assign it to sections containing **Recent Blogs** and **About**.  Create a table class selector in the style sheet and give it the following properties and values:
 
   ```
   {
@@ -112,7 +112,7 @@
   - assign a `cta-button` class to the button and make it a block element with a heigth of `40px`, a line height of `40px`, a red backgound, white text and `border-radius` of `30px`
 10. Footer
   - provide a background color of '#333', height of '4rem' and text color white
-  - give it a padding of 20 and position relative with a width of 100%
+  - give it a padding of 20 and **position relative** with a width of 100%
   - create a `footer-left` and `footer-right` class and assign them to the 2 `div`'s nested in the `footer`
   - set absolute position for both `footer-right` and `footer-left`
   - set a property of `left: 0.50%` on `footer-left`

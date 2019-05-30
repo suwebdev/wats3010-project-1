@@ -1,5 +1,8 @@
 # Project 1: Travel Blog 
 
+[Video: HTML](https://youtu.be/GjfqhfLp0No)  
+[Video: CSS](https://youtu.be/uDN4d10G444)  
+
 ## Design
 
 ### Comp

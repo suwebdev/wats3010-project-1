@@ -1,4 +1,4 @@
-# Project 1: Travel Blog  
+# Project 1: Travel Blog 
 
 ## Design
 
